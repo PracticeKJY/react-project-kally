@@ -1,0 +1,98 @@
+.a11yHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.headerNavMenu {
+  /* position: fixed; */
+  /* position: relative; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--spacing-sm) 0 0;
+  padding: var(--spacing-base) 0;
+}
+
+.headerNavMenu li {
+  display: inline-block;
+}
+
+.headerNavMenuItem a,
+.headerNavMenuItem button {
+  border: none;
+  background-color: transparent;
+  color: var(--black);
+  font-weight: 600;
+  padding: var(--spacing-xs);
+  display: inline-block;
+}
+
+.headerNavHamburger {
+  transform: translateY(1px);
+  margin-right: var(--spacing-xs);
+}
+
+.deliveryBtn {
+  background-color: transparent;
+  border: 1px solid var(--gray-500);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--spacing-base);
+  font-size: var(--text-sm);
+  color: var(--gray-400);
+}
+
+.headerNavSubMenu {
+  position: absolute;
+  flex-flow: column nowrap;
+  background: var(--white);
+  font-size: 0.875rem;
+  display: none;
+  z-index: 100;
+  width: 15.4375rem;
+}
+
+.headerNavSubMenu li {
+  width: 100%;
+  padding-left: 0.25rem;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.headerNavSubMenu img {
+  margin-right: 0.25rem;
+}
+
+.headerNavSubMenu a {
+  padding: var(--spacing-xs);
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-weight: 600;
+  font-size: var(--text-base);
+}
+.headerNavSubMen li:hover {
+  background-color: var(--gray-100);
+}
+.headerNavSubMen li:hover a {
+  color: var(--primary);
+}
+
+.headerNavMenuItem.closed .headerNavSubMen {
+  display: flex;
+}
+
+.headerNavMenuGroup {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-left: 3.125rem;
+}
+
+.isActive {
+  color: var(--primary);
+}

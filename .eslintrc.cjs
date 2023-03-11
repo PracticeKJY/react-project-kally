@@ -22,6 +22,12 @@ module.exports = {
     },
   },
   rules: {
+    'jsx-a11y/label-has-associated-control': [
+      2,
+      {
+        labelAttributes: ['htmlFor'],
+      },
+    ],
     '@typescript-eslint/no-var-requires': 'off',
     'prettier/prettier': [
       'off',
@@ -72,9 +78,9 @@ module.exports = {
       {
         callbacksLast: true,
         shorthandFirst: true,
-        noSortAlphabetically: false,
+        noSortAlphabetically: true,
         reservedFirst: true,
       },
     ],
   },
-};
+}
