@@ -8,7 +8,7 @@ legend {
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
-.linkList {
+.headerContainer {
   display: flex;
   flex-shrink: 0;
   flex-flow: row nowrap;
@@ -27,7 +27,7 @@ legend {
   right: -4px;
 }
 
-.linkList::after {
+.headerContainer::after {
   content: '';
   display: inline-b lock;
   width: 0.0938rem;

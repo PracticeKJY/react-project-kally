@@ -1,6 +1,3 @@
-.mainIcons a {
+.iconsContainer a {
   margin-left: var(--spacing-md);
-}
-.mainIcons {
-  /* margin-left: 10px; */
 }

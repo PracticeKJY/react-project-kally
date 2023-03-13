@@ -1,12 +1,12 @@
+import styles from './Header.module.css'
 import {
-  LogoSwitch,
   SearchInput,
+  HeaderLogoContainer,
   HeaderIcon,
   HeaderNav,
   Member,
   Topbanner,
 } from '@/components/Header'
-import styles from './Header.module.css'
 
 function Header() {
   return (
@@ -15,12 +15,12 @@ function Header() {
       <header className={styles.header}>
         <Member />
         <div className={styles.headerMain}>
-          <LogoSwitch />
+          <HeaderLogoContainer />
           <SearchInput />
           <HeaderIcon />
         </div>
+        <HeaderNav />
       </header>
-      <HeaderNav />
     </>
   )
 }

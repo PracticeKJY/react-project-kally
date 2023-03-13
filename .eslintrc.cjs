@@ -70,7 +70,7 @@ module.exports = {
             position: 'after',
           },
         ],
-        'newlines-between': 'always-and-inside-groups',
+        // 'newlines-between': 'always-and-inside-groups',
       },
     ],
     'react/jsx-sort-props': [

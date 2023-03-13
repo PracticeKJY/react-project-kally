@@ -1,4 +1,4 @@
-.topbanner {
+.topBanner {
   background: var(--primary);
   color: var(--white);
   padding: 14px;
@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.textcontainer {
+.textContainer {
   position: relative;
   width: var(--container-width);
   display: flex;
@@ -14,11 +14,7 @@
   margin: 0 auto;
 }
 
-.boldtext {
-  font-weight: 700;
-}
-
-.testbutton {
+.topBannerButton {
   position: absolute;
   top: 0;
   right: 0;

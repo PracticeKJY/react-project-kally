@@ -1,12 +1,11 @@
+import { useState, useRef, useEffect } from 'react'
+import { MainIcon } from '../HeaderIcon'
 import styles from './HeaderNav.module.css'
 import Location from '@/assets/icons/Icon/header-location.svg'
 import Heart from '@/assets/icons/Icon/header-heart.svg'
 import Cart from '@/assets/icons/Icon/header-Cart.svg'
 import Hamburger from '@/assets/icons/Icon/header-hamburger.svg'
 import Search from '@/assets/icons/Icon/header-search.svg'
-import { useState, useRef, useEffect } from 'react'
-import { MainIcon } from '../HeaderIcon/HeaderIcon'
-import { useCallback } from 'react'
 
 function CategoryData({ href, title, img, alt }) {
   return (
