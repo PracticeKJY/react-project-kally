@@ -11,7 +11,7 @@
 
 .formGroup {
   flex-grow: 1;
-  height: 3.75rem;
+  height: 2.75rem;
   display: flex;
   align-items: center;
   padding-left: 1rem;
@@ -36,4 +36,14 @@
 
 .Icons a {
   margin-left: var(--spacing-md);
+}
+
+.a11yHidden {
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }

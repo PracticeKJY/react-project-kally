@@ -1,6 +1,5 @@
 .a11yHidden,
 legend {
-  background-color: red;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -14,7 +13,7 @@ legend {
   flex-shrink: 0;
   flex-flow: row nowrap;
   align-items: center;
-  gap: 20px;
+  gap: var(--spacing-base);
   line-height: 150%;
   position: relative;
   color: var(--gray-400);
@@ -24,8 +23,8 @@ legend {
 
 .newBadge {
   position: absolute;
-  top: var(--spacing-xs);
-  right: -1rem;
+  top: 10px;
+  right: -4px;
 }
 
 .linkList::after {
@@ -37,4 +36,16 @@ legend {
   position: absolute;
   top: 1.0625rem;
   right: 5.375rem;
+}
+
+.market {
+  margin-right: 20px;
+  color: var(--primary);
+}
+.beauty {
+  padding-right: 8px;
+}
+
+.beauty:hover {
+  color: var(--primary);
 }

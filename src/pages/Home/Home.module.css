@@ -1,5 +1,6 @@
 .container {
   /* color: var(--brand-red-1); */
-  /* background-color: var(--badge-green); */
-  margin-top: 200px;
+  /* background-color: var(--primary); */
+  /* margin-top: 200px; */
+  font-size: 30px;
 }

@@ -3,8 +3,8 @@
   /* position: relative;
   width: 100%; */
   position: relative;
+  /* width: var(--container-width); */
   width: 1050px;
-  height: 100px;
   margin: 0px auto;
   letter-spacing: -0.3px;
 }
@@ -24,15 +24,4 @@
   margin: 0 auto;
   gap: 5.9375rem;
   /* position: relative; */
-}
-
-.topbanner {
-  text-align: center;
-  background: var(--primary);
-  color: var(--white);
-  padding: 14px;
-}
-
-.test01 {
-  font-weight: 700;
 }

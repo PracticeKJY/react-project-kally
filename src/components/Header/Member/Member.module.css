@@ -9,11 +9,13 @@
   align-items: center;
   gap: 0.625rem;
   margin: 0.625rem 0;
+  color: var(--content);
 }
 
 .headerMember a {
   padding: var(--spacing-xs);
-  font-size: var(--text-sm);
+  /* font-weight: 600; */
+  font-size: var(--text-xs);
 }
 
 .headerMember li:nth-child(-n + 2)::after {
@@ -23,4 +25,8 @@
   height: var(--spacing-xs);
   background-color: var(--gray-200);
   margin-left: 0.25rem;
+}
+
+.signUp {
+  color: var(--primary);
 }
