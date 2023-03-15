@@ -13,10 +13,13 @@ function Home() {
     // getCookie 함수를 통해 'modalClose'라는 쿠키가 있는지 확인한다
     let modalCloseValue = getCookie('modalClose');
 
-    if (modalCloseValue && modalCloseValue?.includes('T')) { // 쿠키가 존재할 때
+    if (modalCloseValue && modalCloseValue?.includes('T')) {
+      // 쿠키가 존재할 때
       setModalOpen(false); // 모달창을 띄우지 않는다
     }
+    console.log(modalCloseValue);
   }, []); // 첫 랜더링에만 동작
+  console.log(isModalOpen);
 
   return (
     <>
