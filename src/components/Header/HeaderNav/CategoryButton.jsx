@@ -20,6 +20,8 @@ const CategoryData = ({ href, title, img, alt }) => {
 const CategoryButton = () => {
   const [isHover, setIsHover] = useState(false);
 
+  // console.log(categoryData);
+
   return (
     <ul>
       <li className={styles.headerNavProductList}>
