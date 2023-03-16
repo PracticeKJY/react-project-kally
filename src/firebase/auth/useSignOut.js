@@ -3,6 +3,9 @@ import { signOut as firebaseSignOut } from 'firebase/auth';
 
 import { auth } from './index';
 
+import { userAtom } from '../../recoil/user';
+
+import { useResetRecoilState } from 'recoil';
 /* -------------------------------------------------------------------------- */
 
 /**
@@ -16,6 +19,8 @@ import { auth } from './index';
 export function useSignOut() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  // const [user, setUser] = useRecoilState(userAtom);
+  const resetUser = useResetRecoilState(userAtom);
 
   const signOut = useCallback(async () => {
     setIsLoading(true);
@@ -24,6 +29,8 @@ export function useSignOut() {
     } catch (error) {
       setError(error);
     } finally {
+      // TODO: 아톰을 리셋하는 처리를 추가
+      resetUser();
       setIsLoading(false);
     }
   }, []);

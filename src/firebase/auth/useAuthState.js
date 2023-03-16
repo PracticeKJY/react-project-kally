@@ -1,5 +1,8 @@
 import { useState, useEffect, useMemo } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
+import { useRecoilState } from 'recoil';
+
+import { userAtom } from '../../recoil/user';
 
 import { auth } from './index';
 
@@ -16,15 +19,20 @@ import { auth } from './index';
 export function useAuthState() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [user, setUser] = useState(null);
+  // const [user, setUser] = useState(null);
+  const [user, setUser] = useRecoilState(userAtom);
 
+  // user.uid
   useEffect(() => {
     setIsLoading(true);
 
     return onAuthStateChanged(
       auth,
       (currentUser) => {
+        console.log(currentUser.uid);
+        // if (이전 사용자 != 지금 사용자) {
         setUser(currentUser);
+        // }
         setIsLoading(false);
       },
       (error) => {

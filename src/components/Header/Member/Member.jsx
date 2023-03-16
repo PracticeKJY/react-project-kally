@@ -17,37 +17,22 @@ function Member() {
     signOut();
   };
 
-  const test1 = memberData.filter(
-    (memberData) => !memberData.id.includes('signIn')
-  );
-  const test2 = memberData.filter(
-    (memberData) => !memberData.id.includes('signOut')
-  );
-
-  console.log(test1);
-  console.log(test2);
+  if (user?.uid) {
+    // early return <- clean code
+    return (
+      <MemberContainer>
+        <MemberList text="회원가입" href="./signUp" className="styles.signUp" />
+        <MemberList text="로그인" href="./signIn" />
+        <MemberList text="고객센터" img="assets/header/ic-down.svg" href="./" />
+      </MemberContainer>
+    );
+  }
 
   return (
     <MemberContainer>
-      {user
-        ? test1.map((memberData) => (
-            <MemberList
-              key={memberData.id}
-              text={memberData.text}
-              img={memberData.img}
-              href={memberData.href}
-              className={memberData.className}
-            />
-          ))
-        : test2.map((memberData) => (
-            <MemberList
-              key={memberData.id}
-              text={memberData.text}
-              img={memberData.img}
-              href={memberData.href}
-              className={memberData.className}
-            />
-          ))}
+      <MemberList text="회원가입" href="./signUp" className="styles.signUp" />
+      <MemberList text="로그아웃" href="./" onClick={handleSignOut} />
+      <MemberList text="고객센터" img="assets/header/ic-down.svg" href="./" />
     </MemberContainer>
   );
 }
