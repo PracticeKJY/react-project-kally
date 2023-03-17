@@ -11,14 +11,14 @@ import {
 } from './';
 
 function HeaderNav() {
-  const { wideContainer, deliveryBtn, mainIcons, searchForm } =
+  const { gyungA, wideContainer, deliveryBtn, mainIcons, searchForm } =
     useScrollEvent();
 
   return (
     <nav className={styles.headerNav}>
       <h2 className={styles.a11yHidden}>메인 메뉴</h2>
       <div ref={wideContainer} className={styles.wideContainer}>
-        <div id="1" className={styles.headerNavMenu}>
+        <div ref={gyungA} className={styles.headerNavMenu}>
           <CategoryButton />
           <HeaderNavMenus />
           <SearchForm ref={searchForm} />

@@ -1,5 +1,7 @@
 import styles from './Header.module.css';
 
+import { useAuthState } from '@/firebase/auth';
+
 import {
   Topbanner,
   Member,
@@ -10,6 +12,10 @@ import {
 } from './';
 
 function Header() {
+  const { isLoading, error, user } = useAuthState();
+
+  console.log(user);
+
   return (
     <>
       <Topbanner />

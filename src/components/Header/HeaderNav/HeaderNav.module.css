@@ -22,25 +22,13 @@
   /* box-shadow: 0rem 0.25rem 1.5rem rgba(0, 0, 0, 0.1); */
 }
 
-/* ------------------------ 버튼 mouseover test padding ----------------------- */
 .headerNavDropdown {
-  /* padding: var(--spacing-base) 0; */
   padding: 24px 0;
 }
 
 .headerNavMenu li {
   display: inline-block;
 }
-
-/* .headerNavMenuItem a,
-.headerNavMenuItem button {
-  border: none;
-  background-color: transparent;
-  color: var(--content);
-  font-weight: 600;
-  padding: 24px 4px;
-  display: inline-block;
-} */
 
 .headerNavHamburger {
   transform: translateY(1px);
