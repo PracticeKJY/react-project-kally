@@ -17,7 +17,7 @@ function getUItype(type) {
 
   switch (type) {
     case 'cold':
-      imgTag = <img src="/assets/cart/ic-cold.svg" alt="냉장 식품" />;
+      imgTag = <img src="assets/cart/ic-cold.svg" alt="냉장 식품" />;
       title = '냉장 식품';
       break;
     case 'frozen':

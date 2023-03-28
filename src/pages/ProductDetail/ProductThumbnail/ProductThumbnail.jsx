@@ -127,14 +127,11 @@ function ProductThumbnail({ product }) {
           <div className={styles.ButtonGroup}>
             <a href="?" className={styles.ButtonLike}>
               {/* <img src={IconHeart} alt="동네가게 바로가기 배너" /> */}
-              <img
-                src="/assets/product-detail/ic-heart.svg"
-                alt="찜하기 버튼"
-              />
+              <img src="assets/product-detail/ic-heart.svg" alt="찜하기 버튼" />
             </a>
             <a href="?" className={styles.ButtonNotice}>
               <img
-                src="/assets/product-detail/ic-disabled-alarm.svg"
+                src="assets/product-detail/ic-disabled-alarm.svg"
                 alt="재입고 알림 버튼"
               />
             </a>
@@ -187,7 +184,7 @@ function ProductThumbnail({ product }) {
               </h3> */}
             <img src={product.image.view} alt="탱탱 쫄면" />
             <img src={product.image.info} alt="탱탱 쫄면" />
-            <img src="/assets/product-detail/why-carly.png" alt="탱탱 쫄면" />
+            <img src="assets/product-detail/why-carly.png" alt="탱탱 쫄면" />
           </div>
         </div>
       </section>

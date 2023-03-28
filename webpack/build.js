@@ -32,6 +32,7 @@ const buildConfig = merge(commonConfig, {
   output: {
     path: resolve(__dirname, '../build'),
     filename: '[name].min.js',
+    publicPath: `/react-project-kally/`,
   },
 });
 

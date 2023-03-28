@@ -24,7 +24,7 @@ const NotFound = lazy(() => import('@/pages/NotFound/NotFound'));
 // React Element Type: Router
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route element={<Layout />} errorElement={<NotFound />} path="/">
+    <Route element={<Layout />} errorElement={<NotFound />} path={'/'}>
       <Route index element={<Home />} />
       <Route element={<SignIn />} path="signIn" />
       <Route element={<SignUp />} path="signUp" />
@@ -39,7 +39,10 @@ const router = createBrowserRouter(
       {/* 미영 혼자 추가 끝 */}
       <Route element={<Cart />} path="cart" />
     </Route>
-  )
+  ),
+  {
+    basename: '/react-project-kally/',
+  }
 );
 
 const rootContainer = document.getElementById('root');
