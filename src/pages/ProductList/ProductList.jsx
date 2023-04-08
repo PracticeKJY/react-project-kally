@@ -1,3 +1,6 @@
+import { initialProductList } from '@/store/productListState.js';
+// import { useWriteBatchData } from '../../firebase/firestore/useWriteBatchData';
+
 import { useRecoilValue } from 'recoil';
 import { Link } from 'react-router-dom';
 
@@ -23,6 +26,9 @@ import {
   offsetSelector,
 } from '@/pages/ProductList/@recoil/renderState';
 import ProductCard from '@/components/ProductCard/ProductCard';
+
+import { useWriteBatchData } from '@/firebase/firestore/';
+import { shopData } from './shopData';
 
 const ProductCards = () => {
   const renderAllFilterList = useRecoilValue(renderAllFilterListSelector);
@@ -114,6 +120,23 @@ export const SortButtonList = () => {
 };
 
 export const ProductList = () => {
+  // const { writeBatchData, isLoading, error } = useWriteBatchData(
+  //   'categories',
+  //   'title'
+  // );
+
+  // // console.log(writeBatchData(shopData));
+  // const handleWriteBatchData = () => {
+  //   writeBatchData(shopData);
+  // };
+
+  // if (error) {
+  //   console.log(error);
+  // }
+  //       <button type="button" onClick={handleWriteBatchData}>
+  //         일괄 데이터 쓰기
+  //       </button>
+
   return (
     <>
       <div className={styles.container}>
